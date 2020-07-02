@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Job from './job.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Job employer={"Photosnap"}
+     specialDetails={["New!","Featured"]}
+     position={"Senior Frontend Developer"}
+     age={"1d ago"}
+     workTime={"Full Time"}
+     jobLocation={"USA only"}
+     role={"Frontend"}
+     roleLevel={"Senior"}
+     requisites={['HTML','CSS','JavaScript']}
+     />
     </div>
   );
 }
