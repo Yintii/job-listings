@@ -1,12 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './header.js'
+import Filter from './filter.js'
 import Listings from './listings.js'
-import images from './images/*'
 
 function App() {
   return (
-    <Listings />
+    <div>
+      <Header />
+      <Filter />
+      <Listings />
+    </div>
   );
 }
 
