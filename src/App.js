@@ -9,7 +9,6 @@ function App() {
     <div>
       <Header />
       <Filter />
-      <Listings />
     </div>
   );
 }

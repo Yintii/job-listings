@@ -9,7 +9,6 @@ class Requirements extends React.Component{
     super(props);
     this.state = {listArr: []};
     this.requirements = props.requisites;
-    this.handleClick = this.handleClick.bind(this);
     this.theRequisites = this.requirements.map((requisite)=>
     <div className="requisite" onClick={this.handleClick}>
       <div className="requisite-text">
@@ -18,16 +17,6 @@ class Requirements extends React.Component{
     </div>
     );
   }
-
-  handleClick(e){
-    var req = e.target
-    this.setState(state => ({
-      listArr: [].push(req.innerHTML)
-    }));
-    console.log(this.state.listArr.toString());
-  }
-
-
   render(){
     return(
     <div className="requirements">

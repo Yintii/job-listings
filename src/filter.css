@@ -9,12 +9,7 @@
   position:relative;
   bottom:50px;
   border-radius: 10px;
-}
-.show{
   display:flex;
-}
-.hidden{
-  display:none;
 }
 #filters{
   display:flex;
@@ -26,11 +21,12 @@ ul{
   list-style: none;
   height:200px;
   padding:0;
-  margin:20px;;
+  margin:20px;
   overflow: scroll;
   display:flex;
   flex-flow:row wrap;
   border-radius: 20px;
+  border:1px solid #5CA5A5;
 }
 ul::-webkit-scrollbar{
   display:none;
@@ -72,6 +68,7 @@ li:hover{
   color:white;
 }
 #clear-btn{
+  display:flex;
   font-weight: 700;
   color:white;
   padding:15px;
