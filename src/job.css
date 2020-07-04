@@ -1,3 +1,117 @@
 .job-listing{
-  padding: 30px;
+  position:relative;
+  width:327px;
+  margin:auto;
+  margin:50px auto;
+  background-color: white;
+  border-radius: 10px;
+}
+.stylishline{
+  width: 279px;
+  height:1px;
+  background:#B7C4C4;
+  position: relative;
+  margin:20px 0px 0px 0px;
+}
+.stylishLine2{
+  width:5px;
+  height:100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color:#5CA5A5;
+  position: absolute;
+  left:0;
+}
+img{
+  position:absolute;
+  width:48px;height:48px;
+  top:-24px;left:24px;
+}
+.details{
+  display:flex;
+  flex-flow:column nowrap;
+  padding:35px 24px 10px 24px;
+}
+.listing-header, .specialDetails, .sub-details{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items: center;
+}
+.listing-header{
+  height:24px;
+  display:flex;
+  flex-flow: row nowrap;
+}
+.employer{
+  color: #5CA5A5;
+  font-size:13px;
+  font-weight: 700;
+  height:15px;
+  margin-right:10px;
+}
+div.job-listing:last-child > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+  width:100vw;
+}
+.specialDetails{
+  width:141px;
+  height:24px;
+}
+.specialDetail{
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin:0px 5px;
+  font-size: 11pt;
+}
+.specialDetail:nth-child(2){
+  display:flex;
+  background-color:black;
+  color:white;
+  width:79px;
+  height:24px;
+}
+.specialDetail:first-child{
+  display:flex;
+  color:white;
+  background-color: #5CA5A5;
+  width:51px;
+  height:24px;
+}
+.detail-text{
+  font-size:11px;
+  margin:auto;
+}
+.job-position{
+  font-weight: 700;
+  font-size:15px;
+  margin:10px 0;
+}
+.sub-details{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-start;
+  font-size:13px;
+}
+.sub-details > li{
+  margin:10px 20px 0 0;
+  color: #7C8F8F;
+}
+.sub-details > li:first-child{
+  list-style: none;
+}
+.requirements{
+  display:flex;
+  flex-flow:row wrap;
+  padding: 0px 20px 20px 20px;
+}
+.requisite{
+  margin: 10px 10px 0 0;
+  height:32px;
+  padding:5px;
+  background-color:hsl(180, 31%, 95%);
+  display:flex;
+  border-radius:5px;
+}
+.requisite-text{
+  align-self: center;
+  color:#5CA5A5;
 }
