@@ -13,7 +13,7 @@
   position: relative;
   margin:20px 0px 0px 0px;
 }
-.stylishLine2{
+.stylishline2{
   width:5px;
   height:100%;
   border-top-left-radius: 10px;
@@ -97,21 +97,4 @@ div.job-listing:last-child > div:nth-child(2) > div:nth-child(1) > div:nth-child
 }
 .sub-details > li:first-child{
   list-style: none;
-}
-.requirements{
-  display:flex;
-  flex-flow:row wrap;
-  padding: 0px 20px 20px 20px;
-}
-.requisite{
-  margin: 10px 10px 0 0;
-  height:32px;
-  padding:5px;
-  background-color:hsl(180, 31%, 95%);
-  display:flex;
-  border-radius:5px;
-}
-.requisite-text{
-  align-self: center;
-  color:#5CA5A5;
 }

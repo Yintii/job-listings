@@ -1,8 +1,10 @@
 import React from 'react';
+import Requirements from './requirements.js'
 import './job.css';
+
 function Job(props) {
   const specialDetails = props.specialDetails;
-  const requisites = props.requisites;
+  const reqs = props.requisites;
 
   const specialItems = specialDetails.map((specialDetail)=>
     <div key={specialDetail.toString()} className="specialDetail">
@@ -12,20 +14,13 @@ function Job(props) {
     </div>
   );
 
-  const theRequisites = requisites.map((requisite)=>
-  <div key={requisite.toString()} className="requisite">
-    <div className="requisite-text">
-      {requisite}
-    </div>
-  </div>
-  );
 
   return (
       <div className="job-listing">
       {specialItems.length > 1 &&
-        <div className="stylishLine2"></div>
+        <div className="stylishline2"></div>
       }
-        <img src={props.img} />
+        <img src={props.img} alt="company logo"/>
         <div className="details">
           <div className="listing-header">
             <div className="employer">{props.employer}</div>
@@ -39,8 +34,8 @@ function Job(props) {
           </div>
           <div className="stylishline"></div>
         </div>
-        <div className="requirements">{theRequisites}</div>
-    </div>
+        <Requirements requisites={reqs}/>
+      </div>
     );
 
 }

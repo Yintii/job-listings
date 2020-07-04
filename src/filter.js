@@ -1,7 +1,7 @@
 import React from 'react';
 function Filter(props){
   return(
-    <div id="filter" class="hidden">
+    <div id="filter" className="hidden">
       !!!filter!!!
     </div>
   );
