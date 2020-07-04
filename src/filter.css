@@ -1,0 +1,80 @@
+#filter{
+  width:327px;
+  margin:auto;
+  background-color:white;
+  flex-flow:row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:10px;
+  position:relative;
+  bottom:50px;
+  border-radius: 10px;
+}
+.show{
+  display:flex;
+}
+.hidden{
+  display:none;
+}
+#filters{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+}
+form{
+  display:flex;
+  flex-flow:column nowrap;
+}
+
+ul{
+  list-style: none;
+  height:200px;
+  width:200px;
+  overflow: scroll;
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+}
+ul::-webkit-scrollbar{
+  display:none;
+}
+
+li{
+  padding:5px;
+  margin:5px 10px;
+  border-radius: 10px;
+  background-color:white;
+  color:#5CA5A5;
+  border: 2px #5CA5A5 solid;
+}
+li:hover{
+  background-color:#5CA5A5;
+  color:white;
+}
+.filter-item{
+  display:flex;
+  flex-flow:row nowrap;
+  color:#5CA5A5;
+  background-color: hsl(180, 31%, 95%);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding-left:10px;
+  margin:2px;
+}
+.filter-item > img{
+  background-color:#5CA5A5;
+  padding:16px;
+  margin-left: 10px;
+  border-radius:10px;
+}
+.filtered{
+  background-color: #5CA5A5;
+  color:white;
+}
+#clear-btn{
+  font-weight: 700;
+  color:white;
+  padding:15px;
+  background-color: #5CA5A5;
+  border-radius: 10px;
+}

@@ -31,7 +31,7 @@ function Listings(){
      />
     {/*manage*/}
     <Job
-    img={manage}
+     img={manage}
      employer={"Manage"}
      specialDetails={["New!","Featured"]}
      position={"Fullstack Developer"}
