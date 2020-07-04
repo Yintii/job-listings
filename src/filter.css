@@ -21,28 +21,28 @@
   flex-flow:row wrap;
   justify-content: space-around;
 }
-form{
-  display:flex;
-  flex-flow:column nowrap;
-}
-
 ul{
+  background-color: #63BABA;
   list-style: none;
   height:200px;
-  width:200px;
+  padding:0;
+  margin:20px;;
   overflow: scroll;
-  -ms-overflow-style:none;
-  scrollbar-width:none;
+  display:flex;
+  flex-flow:row wrap;
+  border-radius: 20px;
 }
 ul::-webkit-scrollbar{
   display:none;
 }
 
-li{
-  padding:5px;
-  margin:5px 10px;
+ul > li{
+  position: relative;
+  align-self: center;
+  padding: 5px;
+  margin:5px;
   border-radius: 10px;
-  background-color:white;
+  background-color:#F2F2F2;
   color:#5CA5A5;
   border: 2px #5CA5A5 solid;
 }
