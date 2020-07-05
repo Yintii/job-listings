@@ -16,7 +16,7 @@ import eyeCamCo    from "./images/eyecam-co.svg";
 import theAFC      from "./images/the-air-filter-company.svg";
 
 function Listings(props){
-  console.log(props.filtration_items);
+  console.log(props.filtration_items + "Here");
   return(
     <main>
         <div id="Listings">
@@ -30,6 +30,7 @@ function Listings(props){
          workTime={"Full Time"}
          jobLocation={"USA only"}
          requisites={['Front-End','Senior','HTML','CSS','JavaScript']}
+         filter={props.filtration_items}
          />
         {/*manage*/}
         <Job
