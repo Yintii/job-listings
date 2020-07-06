@@ -16,7 +16,7 @@ import eyeCamCo    from "./images/eyecam-co.svg";
 import theAFC      from "./images/the-air-filter-company.svg";
 
 function Listings(props){
-  console.log(props.filtration_items + "Here");
+  console.log(props.filtration_items);
   return(
     <main>
         <div id="Listings">
@@ -42,6 +42,7 @@ function Listings(props){
          workTime={"Part Time"}
          jobLocation={"Remote"}
          requisites={['Midweight','Fullstack','Python', 'React']}
+         filter={props.filtration_items}
           />
         {/*Account*/}
         <Job
@@ -53,6 +54,7 @@ function Listings(props){
         workTime={"Part Time"}
         jobLocation={"USA only"}
         requisites={['Front-End','Junior','JavaScript', 'React', 'Sass']}
+        filter={props.filtration_items}
         />
         {/*MyHome*/}
         <Job
@@ -64,6 +66,7 @@ function Listings(props){
         workTime={"Contract"}
         jobLocation={"USA only"}
         requisites={['Junior','Front-End','JavaScript', 'CSS']}
+        filter={props.filtration_items}
         />
         {/*Loop Studios*/}
         <Job
@@ -75,6 +78,7 @@ function Listings(props){
         workTime={"Full Time"}
         jobLocation={"Worldwide"}
         requisites={['Fullstack','Midweight','JavaScript','Ruby','Sass']}
+        filter={props.filtration_items}
         />
         {/*FaceIt*/}
         <Job
@@ -86,6 +90,7 @@ function Listings(props){
         workTime={"Full Time"}
         jobLocation={"UK only"}
         requisites={['Junior','Back-End','Ruby','RoR']}
+        filter={props.filtration_items}
         />
         {/*Shortly*/}
         <Job
@@ -97,6 +102,7 @@ function Listings(props){
         workTime={"Full Time"}
         jobLocation={"Worldwide"}
         requisites={['Front-End','Junior','JavaScript', 'Sass']}
+        filter={props.filtration_items}
         />
         {/*Insure*/}
         <Job
@@ -108,6 +114,7 @@ function Listings(props){
         workTime={"Full Time"}
         jobLocation={"USA only"}
         requisites={['Junior','Front-End','JavaScript', 'Vue', 'Sass']}
+        filter={props.filtration_items}
         />
         {/*Eyecam Co.*/}
         <Job
@@ -121,6 +128,7 @@ function Listings(props){
         role={"Fullstack"}
         roleLevel={"Midweight"}
         requisites={['Midweight','Fullstack','JavaScript', 'Python', 'Django']}
+        filter={props.filtration_items}
         />
         {/*The Air Filter Conpany*/}
         <Job
@@ -132,6 +140,7 @@ function Listings(props){
         workTime={"Part Time"}
         jobLocation={"Worldwide"}
         requisites={['Frontend','Junior','JavaScript', 'React', 'Sass']}
+        filter={props.filtration_items}
         />
         </div>
       </main>

@@ -21,30 +21,30 @@ class Filter extends React.Component{
   }
 
   filter(e){
-    {/*This function currently only changes the color of the filter
-      I need to make it sort the content now*/}
-    let filter_item = e.target;
-    if(filter_item.classList.contains('filtered')){
-      filter_item.classList.remove('filtered');
-    }else{
-    filter_item.classList.add('filtered');
-    var addme = this.state.activeFilters.concat(filter_item.innerHTML);
-    this.setState(state =>({
-      activeFilters: addme
-    }));
-    console.log(this.state.activeFilters);
-    }
+      let filter_item = e.target.innerHTML;
+      let filtered_items = this.state.activeFilters;
+      let alreadyFiltered = filtered_items.find(element => element == filter_item);
+      if(alreadyFiltered){
+        console.log(`${filter_item} is already filtered`);
+      }else{
+        e.target.classList.add("filtered");
+        filtered_items = this.state.activeFilters.concat(filter_item);
+        this.setState(state =>({
+          activeFilters: filtered_items
+        }));
+        console.log(filtered_items);
+        console.log(`We just added, ${filter_item}`);
+      }
   }
 
   clearBtn(){
-    //removes all the styling for the filtered selections
     const filters = document.getElementsByClassName('formOption');
     for(let i = 0; i<filters.length; i++){
       if(filters[i].classList.contains('filtered')){
         filters[i].classList.remove('filtered');
       }
     }
-    var empty = [];
+    let empty = [];
     this.setState(state=>({
       activeFilters: empty
     }));
