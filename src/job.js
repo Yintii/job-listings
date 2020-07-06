@@ -10,6 +10,7 @@ class Job extends React.Component{
   render(){
     const specialDetails = this.props.specialDetails;
     const reqs = this.props.requisites;
+    const workT = this.props.workTime;
     const filters = this.props.filter;
     const specialItems = specialDetails.map((specialDetail)=>
       <div key={specialDetail.toString()} className="specialDetail">
@@ -18,14 +19,18 @@ class Job extends React.Component{
         </div>
       </div>
     );
+    //this technically is working just not the way I want it to
+    //it is removing the items that are filtered instead of filtering
+    //out the unrelated items
     const hasFilters = (function(){
       for(let i = 0; i<reqs.length;i++){
+        console.log(`Current search for ${reqs[i]}`);
         for(let ii = 0; ii<filters.length;ii++){
-          if(filters[ii] === reqs[i]){
+          let match = filters.find(element => element == reqs[i])
+          let match2 = filters.find(element => element == workT);
+          if(match || match2){
             return true;
-        }else{
-          return false;
-        }
+          }
       }
     }
     })();
@@ -33,7 +38,7 @@ class Job extends React.Component{
 
   return (
     <div>
-      {hasFilters &&
+    {!hasFilters &&
       <div className="job-listing">
         {specialItems.length > 1 &&
           <div className="stylishline2"></div>

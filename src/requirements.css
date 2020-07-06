@@ -15,3 +15,8 @@
   align-self: center;
   color:#5CA5A5;
 }
+@media (min-width:415px){
+  .requirements{
+    flex-flow:row nowrap;
+  }
+}

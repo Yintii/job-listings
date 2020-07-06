@@ -1,7 +1,6 @@
 .job-listing{
   position:relative;
   width:327px;
-  margin:auto;
   margin:50px auto;
   background-color: white;
   border-radius: 10px;
@@ -50,6 +49,9 @@ div.job-listing > img {
   margin-right:10px;
 }
 div.job-listing:last-child > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+  width:auto;
+}
+#Listings > div:nth-child(10) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
   width:100vw;
 }
 .specialDetails{
@@ -97,4 +99,30 @@ div.job-listing:last-child > div:nth-child(2) > div:nth-child(1) > div:nth-child
 }
 .sub-details > li:first-child{
   list-style: none;
+}
+
+@media (min-width: 415px){
+    .job-listing{
+      width:1110px;
+      display:flex;
+      flex-flow:row nowrap;
+      align-items: center
+    }
+    .stylishline{
+      display:none;
+    }
+    div.job-listing:last-child > div:nth-child(2) > div:nth-child(1) > div:nth-child(1){
+      width:unset;
+    }
+    div.job-listing > img {
+      position:relative;
+      width:88px;height:88px;
+      top:0;
+    }
+    .details{
+      display:flex;
+      flex-flow:column nowrap;
+      margin:0px auto 20px 25px;
+    }
+
 }

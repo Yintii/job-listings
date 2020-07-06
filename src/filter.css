@@ -11,11 +11,7 @@
   border-radius: 10px;
   display:flex;
 }
-#filters{
-  display:flex;
-  flex-flow:row wrap;
-  justify-content: space-around;
-}
+
 ul{
   background-color: #63BABA;
   list-style: none;
@@ -74,4 +70,15 @@ li:hover{
   padding:15px;
   background-color: #5CA5A5;
   border-radius: 10px;
+}
+@media (min-width: 415px){
+  #filter{
+    width:1110px;
+  }
+  ul{
+    height:100px;
+    justify-content: space-evenly;
+    overflow: none;
+    scrollbar-width:none;
+  }
 }

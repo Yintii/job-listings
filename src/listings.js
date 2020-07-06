@@ -27,7 +27,7 @@ function Listings(props){
          specialDetails={["New!","Featured"]}
          position={"Senior Frontend Developer"}
          age={"1d ago"}
-         workTime={"Full Time"}
+         workTime={"Full-Time"}
          jobLocation={"USA only"}
          requisites={['Front-End','Senior','HTML','CSS','JavaScript']}
          filter={props.filtration_items}
@@ -39,7 +39,7 @@ function Listings(props){
          specialDetails={["New!","Featured"]}
          position={"Fullstack Developer"}
          age={"1d ago"}
-         workTime={"Part Time"}
+         workTime={"Part-Time"}
          jobLocation={"Remote"}
          requisites={['Midweight','Fullstack','Python', 'React']}
          filter={props.filtration_items}
@@ -51,7 +51,7 @@ function Listings(props){
         specialDetails={["New!"]}
         position={"Junior Frontend Developer"}
         age={"2d ago"}
-        workTime={"Part Time"}
+        workTime={"Part-Time"}
         jobLocation={"USA only"}
         requisites={['Front-End','Junior','JavaScript', 'React', 'Sass']}
         filter={props.filtration_items}
@@ -75,7 +75,7 @@ function Listings(props){
         specialDetails={[]}
         position={"Software Engineer"}
         age={"1w ago"}
-        workTime={"Full Time"}
+        workTime={"Full-Time"}
         jobLocation={"Worldwide"}
         requisites={['Fullstack','Midweight','JavaScript','Ruby','Sass']}
         filter={props.filtration_items}
@@ -87,7 +87,7 @@ function Listings(props){
         specialDetails={[]}
         position={"Junior Backend Developer"}
         age={"2w ago"}
-        workTime={"Full Time"}
+        workTime={"Full-Time"}
         jobLocation={"UK only"}
         requisites={['Junior','Back-End','Ruby','RoR']}
         filter={props.filtration_items}
@@ -99,7 +99,7 @@ function Listings(props){
         specialDetails={[]}
         position={"Junior Developer"}
         age={"2w ago"}
-        workTime={"Full Time"}
+        workTime={"Full-Time"}
         jobLocation={"Worldwide"}
         requisites={['Front-End','Junior','JavaScript', 'Sass']}
         filter={props.filtration_items}
@@ -111,7 +111,7 @@ function Listings(props){
         specialDetails={[]}
         position={"Junior Frontend Developer"}
         age={"2w ago"}
-        workTime={"Full Time"}
+        workTime={"Full-Time"}
         jobLocation={"USA only"}
         requisites={['Junior','Front-End','JavaScript', 'Vue', 'Sass']}
         filter={props.filtration_items}
@@ -123,7 +123,7 @@ function Listings(props){
         specialDetails={[]}
         position={"FullStack Engineer"}
         age={"3w ago"}
-        workTime={"Full Time"}
+        workTime={"Full-Time"}
         jobLocation={"Worldwide"}
         role={"Fullstack"}
         roleLevel={"Midweight"}
@@ -137,7 +137,7 @@ function Listings(props){
         specialDetails={[]}
         position={"Front-end Dev"}
         age={"1mo ago"}
-        workTime={"Part Time"}
+        workTime={"Part-Time"}
         jobLocation={"Worldwide"}
         requisites={['Frontend','Junior','JavaScript', 'React', 'Sass']}
         filter={props.filtration_items}
