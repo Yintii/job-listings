@@ -38,28 +38,56 @@ class Job extends React.Component{
 
   return (
     <div>
-    {!hasFilters &&
-      <div className="job-listing">
-        {specialItems.length > 1 &&
-          <div className="stylishline2"></div>
-        }
-          <img src={this.props.img} alt="company logo"/>
-          <div className="details">
-            <div className="listing-header">
-              <div className="employer">{this.props.employer}</div>
-              <div className="specialDetails">{specialItems}</div>
+      <div>
+      {/*Shows the filtered results*/}
+      {hasFilters &&
+        <div className="job-listing">
+          {specialItems.length > 1 &&
+            <div className="stylishline2"></div>
+          }
+            <img src={this.props.img} alt="company logo"/>
+            <div className="details">
+              <div className="listing-header">
+                <div className="employer">{this.props.employer}</div>
+                <div className="specialDetails">{specialItems}</div>
+              </div>
+              <div className="job-position">{this.props.position}</div>
+              <div className="sub-details">
+                <li className="listing-age">{this.props.age}</li>
+                <li className="job-time">{this.props.workTime}</li>
+                <li className="job-location">{this.props.jobLocation}</li>
+              </div>
+              <div className="stylishline"></div>
             </div>
-            <div className="job-position">{this.props.position}</div>
-            <div className="sub-details">
-              <li className="listing-age">{this.props.age}</li>
-              <li className="job-time">{this.props.workTime}</li>
-              <li className="job-location">{this.props.jobLocation}</li>
-            </div>
-            <div className="stylishline"></div>
+            <Requirements requisites={reqs}/>
           </div>
-          <Requirements requisites={reqs}/>
+        }
+      </div>
+      {/*Shows all the job listings when no filters are active*/}
+      <div>
+      {!hasFilters && filters.length == 0 &&
+        <div className="job-listing">
+          {specialItems.length > 1 &&
+            <div className="stylishline2"></div>
+          }
+            <img src={this.props.img} alt="company logo"/>
+            <div className="details">
+              <div className="listing-header">
+                <div className="employer">{this.props.employer}</div>
+                <div className="specialDetails">{specialItems}</div>
+              </div>
+              <div className="job-position">{this.props.position}</div>
+              <div className="sub-details">
+                <li className="listing-age">{this.props.age}</li>
+                <li className="job-time">{this.props.workTime}</li>
+                <li className="job-location">{this.props.jobLocation}</li>
+              </div>
+              <div className="stylishline"></div>
+            </div>
+            <Requirements requisites={reqs}/>
+          </div>
+        }
         </div>
-      }
       </div>
     );
   }

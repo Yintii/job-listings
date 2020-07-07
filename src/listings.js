@@ -16,7 +16,6 @@ import eyeCamCo    from "./images/eyecam-co.svg";
 import theAFC      from "./images/the-air-filter-company.svg";
 
 function Listings(props){
-  console.log(props.filtration_items);
   return(
     <main>
         <div id="Listings">
