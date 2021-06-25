@@ -72,7 +72,7 @@ class Filter extends React.Component{
           <div id="clear-btn" onClick={this.clearBtn}>
             Clear
           </div>
-        </div>
+        </div>]
         <Listings filtration_items={this.state.activeFilters}/>
       </div>
     );
