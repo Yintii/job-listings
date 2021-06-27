@@ -1,6 +1,6 @@
 import React from 'react';
 import Requirements from './requirements.js'
-import './job.css';
+import '../styles/job.css';
 
 class Job extends React.Component{
   constructor(props){

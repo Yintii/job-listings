@@ -1,12 +1,12 @@
 #Header{
   width:100vw;
   height: 156px;
-  background-image: url(./images/bg-header-mobile.svg);
+  background-image: url(../images/bg-header-mobile.svg);
   background-color: #5CA5A5;
 }
 @media (min-width:415px){
   #Header{
-    background-image: url(./images/bg-header-desktop.svg);
+    background-image: url(../images/bg-header-desktop.svg);
     background-size:100%;
   }
 }

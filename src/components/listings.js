@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../styles/App.css';
 import Job from './job.js';
 import DATA from './data.js'
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import closebtn from './images/icon-remove.svg';
-import './requirements.css'
-import './filter.css';
+import closebtn from '../images/icon-remove.svg';
+import '../styles/requirements.css'
+import '../styles/filter.css';
 
 
 class Requirements extends React.Component{

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './filter.css';
+import '../styles/filter.css';
 import Listings from './listings.js';
 
 

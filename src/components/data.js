@@ -2,16 +2,16 @@
 //usually you would use webpack
 //to bundle all these in a module but
 //that was a lot of work so we're just typing it out for now
-import photosnap   from "./images/photosnap.svg";
-import manage      from "./images/manage.svg";
-import account     from "./images/account.svg";
-import myHome      from "./images/myhome.svg";
-import loopStudios from "./images/loop-studios.svg";
-import faceIt      from "./images/faceit.svg";
-import shortly     from "./images/shortly.svg";
-import insure      from "./images/insure.svg";
-import eyeCamCo    from "./images/eyecam-co.svg";
-import theAFC      from "./images/the-air-filter-company.svg";
+import photosnap   from "../images/photosnap.svg";
+import manage      from "../images/manage.svg";
+import account     from "../images/account.svg";
+import myHome      from "../images/myhome.svg";
+import loopStudios from "../images/loop-studios.svg";
+import faceIt      from "../images/faceit.svg";
+import shortly     from "../images/shortly.svg";
+import insure      from "../images/insure.svg";
+import eyeCamCo    from "../images/eyecam-co.svg";
+import theAFC      from "../images/the-air-filter-company.svg";
 
 /*
 moving the data from off the components in listings.js
