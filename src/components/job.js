@@ -19,15 +19,18 @@ class Job extends React.Component{
         </div>
       </div>
     );
-    //this technically is working just not the way I want it to
-    //it is removing the items that are filtered instead of filtering
-    //out the unrelated items
+    /*
+      this not working currently as expected
+      it is supposed to check if all filters
+      selected match the job listing, then 
+      filter out the results accordingly
+    */
     const hasFilters = (function(){
       for(let i = 0; i<reqs.length;i++){
         console.log(`Current search for ${reqs[i]}`);
         for(let ii = 0; ii<filters.length;ii++){
-          let match = filters.find(element => element == reqs[i])
-          let match2 = filters.find(element => element == workT);
+          let match = filters.find(element => element.match(reqs[i]))
+          let match2 = filters.find(element => element.match(workT));
           if(match || match2){
             return true;
           }

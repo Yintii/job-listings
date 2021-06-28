@@ -23,16 +23,14 @@ class Filter extends React.Component{
   filter(e){
       let filter_item = e.target.innerHTML;
       let filtered_items = this.state.activeFilters;
-      let alreadyFiltered = filtered_items.find(element => element == filter_item);
+      let alreadyFiltered = filtered_items.find(element => element.match(filter_item));
       if(alreadyFiltered){
         e.target.classList.remove("filtered");
-        for(var i = 0;i<filtered_items.length;i++){
-          if(filtered_items[i] == alreadyFiltered){
-            this.setState(state =>({
-              activeFilters: filtered_items.splice(i, alreadyFiltered)
-            }));
-          }
-        }
+        let removeme = filtered_items.find(element => element.indexOf(filter_item));
+        this.setState(state =>({
+          activeFilters: filtered_items.splice(removeme, 1)
+        }));
+        console.log("Already filtered!")
       }else{
         e.target.classList.add("filtered");
         filtered_items = this.state.activeFilters.concat(filter_item);
